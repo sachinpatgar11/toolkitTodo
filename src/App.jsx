@@ -1,10 +1,12 @@
 import "./App.css";
+import AddTodo from "./components/AddTodo";
 import Todos from "./components/Todos";
 
 function App() {
   return (
     <>
-      <h1>Redux Toolkit</h1>
+      <h1 className="todo-heading">Redux Toolkit</h1>
+      <AddTodo />
       <Todos />
     </>
   );

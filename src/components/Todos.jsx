@@ -8,14 +8,18 @@ function Todos() {
 
   return (
     <>
-      <div>Todos</div>
-      {todos.map((todo) => (
-        <li key={todo.id}>
-          {todo.text}
+      <h2 className="todoItem-heading">Todo Items</h2>
+      <ul className="todo-list">
+        {todos.map((todo) => (
+          <li key={todo.id} className="todo-item">
+            {todo.text}
 
-          <button onClick={() => dispatch(removeTodo(todo.id))}>Delete</button>
-        </li>
-      ))}
+            <button onClick={() => dispatch(removeTodo(todo.id))}>
+              Delete
+            </button>
+          </li>
+        ))}
+      </ul>
     </>
   );
 }
