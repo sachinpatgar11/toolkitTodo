@@ -15,15 +15,47 @@
 .todoItem-heading {
   font-size: 1.5rem;
   line-height: 1.125rem;
+  margin-top: 3rem;
 }
 .todo-list {
   list-style: none;
 }
 .todo-item {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 5rem;
+  font-size: 2rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
 }
 
+.todo-form {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 2.5rem;
+}
 .form-input {
+  border: 1px solid gray;
   border-radius: 4px;
+  cursor: pointer;
+  width: 20rem;
+  padding: 0.6rem 1rem 0.6rem 0.3rem;
+}
+.form-input:focus,
+.form-input:focus-visible {
+  border: 1px solid indigo;
+  border-radius: 4px;
+  outline: indigo;
+}
+.form-addButton {
+  font-size: 1.5rem;
+  line-height: 1.2;
+  background-color: green;
+  padding: 0.5rem 2rem;
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
 }

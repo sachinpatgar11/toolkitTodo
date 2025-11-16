@@ -15,7 +15,7 @@ function AddTodo() {
   }
 
   return (
-    <form onSubmit={addTodoHandler} className="space-x-3 mt-12">
+    <form onSubmit={addTodoHandler} className="todo-form">
       <input
         type="text"
         className="form-input"
@@ -23,7 +23,7 @@ function AddTodo() {
         value={input}
         onChange={(e) => setInput(e.target.value)}
       />
-      <button type="submit" className="">
+      <button type="submit" className="form-addButton">
         Add Todo
       </button>
     </form>
