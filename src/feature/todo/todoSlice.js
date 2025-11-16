@@ -11,7 +11,7 @@ const todoSlice = createSlice({
     addTodo: (state, action) => {
       const todo = {
         id: nanoid(),
-        text: action.payload.text,
+        text: action.payload,
       };
       state.todos.push(todo);
     },
